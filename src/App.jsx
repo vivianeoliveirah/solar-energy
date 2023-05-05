@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Dashboard, NotFound } from './pages';
+import { Dashboard, NotFound, Unidades } from './pages';
 
 function App() {
   
@@ -9,6 +9,7 @@ function App() {
       <Route path="/" element={<Dashboard/>}/>
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="*" element={<NotFound />} /> 
+      <Route path="/unidades" element={<Unidades />} />
     </Routes>
     </BrowserRouter>
   )
