@@ -9,10 +9,10 @@ export default function Menu() {
             <Link to="/dashboard">
                 <button>Dashboard</button>
             </Link>
-            <Link to="/">
+            <Link to="/unidades">
                 <button>Unidade Consumidora</button>
             </Link>
-            <button onClick={() => navigate("/")}>Cadastro de Energia Gerada</button>
+            <button onClick={() => navigate("/geracoes")}>Cadastro de Energia Gerada</button>
         </div>
     )
 }
