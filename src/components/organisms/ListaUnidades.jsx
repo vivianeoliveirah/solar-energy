@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 
-export default function ListaUnidades({ setOpenFormulario }) {
+export default function ListaUnidades({
+  setOpenFormulario,
+  setUnidadeSelecionada,
+}) {
   const [unidades, setUnidades] = useState([]);
   function getData() {
     fetch("http://localhost:3333/unidades")
@@ -46,7 +49,14 @@ export default function ListaUnidades({ setOpenFormulario }) {
               <td>{unidade.marca}</td>
               <td>{unidade.modelo}</td>
               <td>
-                <button>Editar</button>
+                <button
+                  onClick={() => {
+                    setUnidadeSelecionada(unidade);
+                    setOpenFormulario(true);
+                  }}
+                >
+                  Editar
+                </button>
               </td>
               <td>
                 <button onClick={() => handleDelete(unidade.id)}>

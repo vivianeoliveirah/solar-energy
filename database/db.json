@@ -2,7 +2,7 @@
   "unidades": [
     {
       "id": "abc",
-      "apelido": "Unidade 1",
+      "apelido": "123",
       "local": "Rua 123",
       "marca": "Marca 1",
       "modelo": "Modelo 1",
@@ -39,6 +39,30 @@
       "modelo": "124",
       "ativa": false,
       "id": "1SmVWkz"
+    },
+    {
+      "apelido": "",
+      "local": "",
+      "marca": "",
+      "modelo": "",
+      "ativa": false,
+      "id": "TmjZbDU"
+    },
+    {
+      "apelido": "",
+      "local": "",
+      "marca": "",
+      "modelo": "",
+      "ativa": false,
+      "id": "XBFjIMp"
+    },
+    {
+      "apelido": "nova",
+      "local": "123",
+      "marca": "989",
+      "modelo": "bom",
+      "ativa": true,
+      "id": "v_oRxLL"
     }
   ]
 }

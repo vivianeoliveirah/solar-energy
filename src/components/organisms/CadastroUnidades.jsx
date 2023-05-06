@@ -1,24 +1,38 @@
 import { useState } from "react";
 import Input from "../atoms/Input";
 
-export default function CadastroUnidades({ setOpenFormulario }) {
-  const [formulario, setFormulario] = useState({
+export default function CadastroUnidades({
+  setOpenFormulario,
+  unidadeSelecionada,
+  setUnidadeSelecionada,
+}) {
+  const estadoInicialVazio = {
     apelido: "",
     local: "",
     marca: "",
     modelo: "",
     ativa: false,
-  });
+  };
+  const [formulario, setFormulario] = useState(
+    unidadeSelecionada || estadoInicialVazio
+  );
 
   const salvarFormulario = (event) => {
     event.preventDefault();
-
-    fetch("http://localhost:3333/unidades", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formulario),
-    });
-
+    if (unidadeSelecionada) {
+      fetch(`http://localhost:3333/unidades/${unidadeSelecionada.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formulario),
+      });
+    } else {
+      fetch("http://localhost:3333/unidades", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formulario),
+      });
+    }
+    setUnidadeSelecionada(estadoInicialVazio);
     setOpenFormulario(false);
   };
   return (
