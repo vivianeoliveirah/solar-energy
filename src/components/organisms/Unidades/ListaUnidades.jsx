@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import './ListaUnidades.css'
+import Button from "../../atoms/Button/Button";
 export default function ListaUnidades({
   setOpenFormulario,
   setUnidadeSelecionada,
@@ -50,26 +51,33 @@ export default function ListaUnidades({
               <td>{unidade.marca}</td>
               <td>{unidade.modelo}</td>
               <td>
-                <button
+                <Button
+                  classStyle="green"
                   onClick={() => {
                     setUnidadeSelecionada(unidade);
                     setOpenFormulario(true);
                   }}
                 >
                   Editar
-                </button>
+                </Button>
               </td>
               <td>
-                <button onClick={() => handleDelete(unidade.id)}>
+                <Button classStyle="danger" onClick={() => handleDelete(unidade.id)}>
                   Excluir
-                </button>
+                </Button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
 
-      <button onClick={() => setOpenFormulario(true)} id="new-unit">Nova Unidade</button>
+      <Button
+        id="new-unit"
+        classStyle="secondary"
+        onClick={() => setOpenFormulario(true)}
+      >
+        Nova Unidade
+      </Button>
     </section>
   );
 }
