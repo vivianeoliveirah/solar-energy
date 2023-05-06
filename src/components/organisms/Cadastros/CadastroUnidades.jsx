@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Input from "../atoms/Input";
+import Input from "../../atoms/Input";
 
 export default function CadastroUnidades({
   setOpenFormulario,
