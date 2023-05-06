@@ -1,5 +1,9 @@
+import Container from "../../components/templates/container"
+
 export default function Dashboard() {
     return (
-        <h1>Dashboard</h1>
-    );  
+        <Container title="Dashboard">
+            <p>- Conteudo aqui</p>
+        </Container>
+    );
 }
