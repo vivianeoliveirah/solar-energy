@@ -38,3 +38,14 @@
     padding: 60px 8vw;
     overflow-x: auto;
   }
+
+.title{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 42px;
+
+color: #374557;
+
+}
