@@ -1,8 +1,7 @@
 import { useState } from "react";
 
-import CadastroUnidades from "../../components/organisms/CadastroUnidades";
-import ListaUnidades from "../../components/organisms/ListaUnidades";
 import Container from "../../components/templates/container";
+import { CadastroUnidades, ListaUnidades } from "../../components";
 
 export default function Unidades() {
   const [openFormulario, setOpenFormulario] = useState(false);
