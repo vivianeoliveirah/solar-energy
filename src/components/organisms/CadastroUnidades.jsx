@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Input from "../atoms/Input";
 
 export default function CadastroUnidades({ setOpenFormulario }) {
   const [formulario, setFormulario] = useState({
@@ -8,7 +9,6 @@ export default function CadastroUnidades({ setOpenFormulario }) {
     modelo: "",
     ativa: false,
   });
-  console.log(formulario);
 
   const salvarFormulario = (event) => {
     event.preventDefault();
@@ -26,7 +26,7 @@ export default function CadastroUnidades({ setOpenFormulario }) {
       <h2>Cadastro de Unidade Geradora</h2>
       <form onSubmit={salvarFormulario}>
         <label htmlFor="apelido">Apelido</label>
-        <input
+        <Input
           type="text"
           name="apelido"
           id="apelido"
@@ -40,7 +40,7 @@ export default function CadastroUnidades({ setOpenFormulario }) {
         />
 
         <label htmlFor="local">Local</label>
-        <input
+        <Input
           type="text"
           name="local"
           id="local"
@@ -54,7 +54,7 @@ export default function CadastroUnidades({ setOpenFormulario }) {
         />
 
         <label htmlFor="marca">Marca</label>
-        <input
+        <Input
           type="text"
           name="marca"
           id="marca"
@@ -68,7 +68,7 @@ export default function CadastroUnidades({ setOpenFormulario }) {
         />
 
         <label htmlFor="modelo">Modelo</label>
-        <input
+        <Input
           type="text"
           name="modelo"
           id=""
