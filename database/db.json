@@ -49,20 +49,20 @@
       "id": "TmjZbDU"
     },
     {
-      "apelido": "",
-      "local": "",
-      "marca": "",
-      "modelo": "",
-      "ativa": false,
+      "apelido": "Editando",
+      "local": "Senai",
+      "marca": "Boder",
+      "modelo": "Avançado",
+      "ativa": true,
       "id": "XBFjIMp"
     },
     {
-      "apelido": "nova",
-      "local": "123",
-      "marca": "989",
-      "modelo": "bom",
+      "apelido": "Nova",
+      "local": "Bom",
+      "marca": "Todas",
+      "modelo": "Simples",
       "ativa": true,
-      "id": "v_oRxLL"
+      "id": "9gk4tzZ"
     }
   ]
 }
