@@ -5,6 +5,7 @@ export default function ListaUnidades({
   setUnidadeSelecionada,
 }) {
   const [unidades, setUnidades] = useState([]);
+  
   function getData() {
     fetch("http://localhost:3333/unidades")
       .then((response) => response.json())

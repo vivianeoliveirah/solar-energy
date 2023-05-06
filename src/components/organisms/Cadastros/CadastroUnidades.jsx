@@ -6,16 +6,15 @@ export default function CadastroUnidades({
   unidadeSelecionada,
   setUnidadeSelecionada,
 }) {
-  const estadoInicialVazio = {
+  const emptyState = {
     apelido: "",
     local: "",
     marca: "",
     modelo: "",
     ativa: false,
   };
-  const [formulario, setFormulario] = useState(
-    unidadeSelecionada || estadoInicialVazio
-  );
+
+  const [formulario, setFormulario] = useState(unidadeSelecionada || emptyState);
 
   const salvarFormulario = (event) => {
     event.preventDefault();
@@ -32,7 +31,7 @@ export default function CadastroUnidades({
         body: JSON.stringify(formulario),
       });
     }
-    setUnidadeSelecionada(estadoInicialVazio);
+    setUnidadeSelecionada(emptyState);
     setOpenFormulario(false);
   };
   return (
