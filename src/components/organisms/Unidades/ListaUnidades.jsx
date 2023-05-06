@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import './ListaUnidades.css'
 export default function ListaUnidades({
   setOpenFormulario,
   setUnidadeSelecionada,
@@ -25,7 +25,7 @@ export default function ListaUnidades({
   };
 
   return (
-    <section>
+    <section className="unit-list">
       <h2>Lista de unidades:</h2>
       <br />
       <table>
@@ -68,7 +68,7 @@ export default function ListaUnidades({
         </tbody>
       </table>
 
-      <button onClick={() => setOpenFormulario(true)}>Nova Unidade</button>
+      <button onClick={() => setOpenFormulario(true)} id="new-unit">Nova Unidade</button>
     </section>
   );
 }

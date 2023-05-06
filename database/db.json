@@ -28,7 +28,7 @@
       "apelido": "new",
       "local": "miram",
       "marca": "abnh",
-      "modelo": "1789",
+      "modelo": "Modelo 4",
       "ativa": true,
       "id": "n-cECnW"
     },
@@ -36,17 +36,9 @@
       "apelido": "hjk",
       "local": "mor",
       "marca": "bnmo",
-      "modelo": "124",
+      "modelo": "Modelo 5",
       "ativa": false,
       "id": "1SmVWkz"
-    },
-    {
-      "apelido": "",
-      "local": "",
-      "marca": "",
-      "modelo": "",
-      "ativa": false,
-      "id": "TmjZbDU"
     },
     {
       "apelido": "Editando",

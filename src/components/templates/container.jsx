@@ -7,7 +7,7 @@ export default function Container({ children, title }) {
       <Navbar />
 
       <header>
-        <h1>{title}</h1>
+        <h1 className="title">{title}</h1>
       </header>
 
       <main>{children}</main>
