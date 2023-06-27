@@ -1,18 +1,23 @@
 import { useState } from "react";
-import Input from "../../atoms/Input";
+import Input from "../../atoms/Input/Input";
+import "./CadastroUnidades.css";
 
-export default function CadastroEnergia({
+export default function CadastroUnidades({
   setOpenFormulario,
   unidadeSelecionada,
   setUnidadeSelecionada,
 }) {
   const emptyState = {
-    unidadeGeradora: "",
-    mes: "",
-    kwGerado: "",
-    };
+    apelido: "",
+    local: "",
+    marca: "",
+    modelo: "",
+    ativa: false,
+  };
 
-  const [formulario, setFormulario] = useState(unidadeSelecionada || emptyState);
+  const [formulario, setFormulario] = useState(
+    unidadeSelecionada || emptyState
+  );
 
   const salvarFormulario = (event) => {
     event.preventDefault();
@@ -33,7 +38,7 @@ export default function CadastroEnergia({
     setOpenFormulario(false);
   };
   return (
-    <section>
+    <section className="unidades-cadastro">
       <h2>Cadastro de Unidade Geradora</h2>
       <form onSubmit={salvarFormulario}>
         <label htmlFor="apelido">Apelido</label>

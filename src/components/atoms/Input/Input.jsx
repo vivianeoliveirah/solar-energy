@@ -1,3 +1,4 @@
+import "./Input.css";
 export default function Input({ icon, ...props }) {
   return (
     <div className="input-container">

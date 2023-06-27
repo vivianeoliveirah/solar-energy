@@ -1,9 +1,10 @@
 import "./Navbar.css";
+import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import logo from "../../assets/logo.svg";
-import dashboard from "../../assets/dashboard.svg";
-import unidadeConsumidora from "../../assets/unidade-consumidora.svg";
-import cadastroEnergiaGerada from "../../assets/cadastro-energia-gerada.svg";
+import logo from "../../../assets/logo.svg";
+import dashboard from "../../../assets/dashboard.svg";
+import unidadeConsumidora from "../../../assets/unidade-consumidora.svg";
+import cadastroEnergiaGerada from "../../../assets/cadastro-energia-gerada.svg";
 
 export default function Navbar() {
   const navigate = useNavigate();

@@ -1,0 +1,44 @@
+.unidades-cadastro h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  color: #374557;
+  margin-bottom: 30px;
+}
+
+.unidades-cadastro form {
+  display: flex;
+  flex-direction: column;
+}
+
+.unidades-cadastro input {
+  height: 57px;
+  widht: 633px;
+}
+
+.unidades-cadastro label {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #53575d;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.unidades-cadastro div.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.unidades-cadastro div.checkbox label {
+  margin-bottom: 10px;
+}
+
+.unidades-cadastro button {
+  margin-bottom: 50px;
+}

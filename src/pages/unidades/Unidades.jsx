@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Container from "../../components/templates/container";
+import Container from "../../components/templates/Contanier/Container";
 import { CadastroUnidades, ListaUnidades } from "../../components";
 
 export default function Unidades() {
@@ -8,7 +8,7 @@ export default function Unidades() {
   const [unidadeSelecionada, setUnidadeSelecionada] = useState(undefined);
 
   return (
-    <Container title='Unidades'>
+    <Container title="Unidades">
       {openFormulario === false && (
         <ListaUnidades
           setOpenFormulario={setOpenFormulario}

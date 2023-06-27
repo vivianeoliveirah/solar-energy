@@ -1,5 +1,5 @@
-import Navbar from "../molecules/Navbar"
-import "./Container.css"
+import Navbar from "../../molecules/Navbar/Navbar";
+import "./Container.css";
 
 export default function Container({ children, title }) {
   return (
@@ -12,5 +12,5 @@ export default function Container({ children, title }) {
 
       <main>{children}</main>
     </div>
-  )
+  );
 }

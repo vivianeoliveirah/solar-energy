@@ -1,15 +1,14 @@
-import Container from "../../components/templates/container"
-
-
+import { useState } from "react";
+import { Cards, Container, Chart } from "../../components";
 
 export default function Dashboard() {
-    return (
-        <Container title="Dashboard">
-            
-            <div>
-                GRAFICO
-            </div> 
-            
-        </Container>
-    );
+  const [filter, setFilter] = useState("all");
+
+  return (
+    <Container title="Dasboard">
+      <Cards setFilter={setFilter} />
+
+      <Chart filter={filter} />
+    </Container>
+  );
 }

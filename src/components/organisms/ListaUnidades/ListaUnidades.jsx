@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
-import './ListaUnidades.css'
+import "./ListaUnidades.css";
 import Button from "../../atoms/Button/Button";
+
 export default function ListaUnidades({
   setOpenFormulario,
   setUnidadeSelecionada,
 }) {
   const [unidades, setUnidades] = useState([]);
-  
+
   function getData() {
     fetch("http://localhost:3333/unidades")
       .then((response) => response.json())
@@ -62,7 +63,10 @@ export default function ListaUnidades({
                 </Button>
               </td>
               <td>
-                <Button classStyle="danger" onClick={() => handleDelete(unidade.id)}>
+                <Button
+                  classStyle="danger"
+                  onClick={() => handleDelete(unidade.id)}
+                >
                   Excluir
                 </Button>
               </td>
