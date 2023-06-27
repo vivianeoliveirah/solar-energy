@@ -36,7 +36,7 @@ export default function Geracoes() {
 
   return (
     <Container title="Lançamento de geração mensal">
-      <form onSubmit={handleSave} className="GeneratedEnergyRegistration">
+      <form onSubmit={handleSave} className="Geracoes">
         <div>
           <label htmlFor="unidade">Unidade geradora:</label>
           <select
